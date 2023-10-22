@@ -4,6 +4,7 @@
 
 Google CloudでOAuth 2.0 Clientを作成している
 
+作成方法は[こちら](https://support.google.com/workspacemigrate/answer/9222992?hl=ja)を参照
 
 ## 手順
 
