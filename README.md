@@ -4,7 +4,7 @@
 
 Google Cloud上で、収益化できているYouTubeチャンネルに紐づいているGoogleアカウントのOAuth 2.0 Clientを作成している
 
-作成方法は[こちら](https://support.google.com/workspacemigrate/answer/9222992?hl=ja)を参照
+作成方法は[こちら](https://developers.google.com/identity/protocols/oauth2/web-server?hl=ja)を参照
 
 ## 手順
 
@@ -16,7 +16,9 @@ Google Cloud上で、収益化できているYouTubeチャンネルに紐づい�
    ```
 2. `go run main.go`を実行する
 3. `Visit the URL for the auth dialog: ` に続くURLにアクセスする
-4. YouTubeのアカウントに紐づいているGoogleアカウントにログインした後に\[コード\] に当たる部分を`Enter your code (the one which starts from code= in the URL): `にペーストする
+4. YouTubeのアカウントに紐づいているGoogleアカウントにログインした後にリダイレクト先の\[コード\] に当たる部分を`Enter your code (the one which starts from code= in the URL): `にペーストする
    
-```http://localhost:8080/?state=state&code=[コード]&scope=```
+
+```(GOOGLE_OAUTH2_REDIRECT_URL)/?state=state&code=[コード]&scope=```
+
 5. アクセストークンを取得する
